@@ -1,0 +1,25 @@
+Test Case Code,Test Case,Pre-Condition,Test Step,Expected Result
+,,,,
+TC-001,Verify that all the fields such as Username/Email and Password and have a valid placeholder,"User is on the ""Login"" Page",1. Check all the place holder from all the fields,There are should be place holder on every field
+TC-002,Verify that all the required/mandatory fields are marked with * against the field,"User is on the ""Login"" Page",1. Check the * on the mandatory field,There's should be * on the mandatory fields
+TC-003,"Verify that system generates a validation message when clicking on ""Login"" button without filling all the mandatory fields","User is on the ""Login"" Page","1. Click on ""Login"" button without fill all the fields","An alert message should show up and the message is ""This field is required"""
+TC-004,Verify that user is able to login with a valid username and password,"User is on the ""Login"" Page","1. Fill in the username and password field with a valid username and password
+2. Click on ""Login"" button",User will successfully login
+TC-005,"Verify that user is able to login by clicking ""Enter"" key as subtitute for ""Login"" button","User is on the ""Login"" Page","1. Fill in the username and password field with a valid username and password
+2. Click on ""Enter"" button",User will successfully login
+TC-006,Verify that system generates a validation message when entering incorrect email/user ID,"User is on the ""Login"" Page","1. Fill in the username and password field with incorrect username
+2. Click on ""Login"" button",User will be unable to login and an alert message should show up (the message is based on requirement)
+TC-007,Verify that system generates a validation message when entering incorrect password,"User is on the ""Login"" Page","1. Fill in the username and password field with incorrect password
+2. Click on ""Login"" button",User will be unable to login and an alert message should show up (the message is based on requirement)
+TC-008,Verify the username and password limit when entering the username and password less than minimum characters,"User is on the ""Login"" Page",1. Fill in the username and password field with less than minimum characters,"An alert message should show up and the message is ""(based on requirement)"""
+TC-009,Verify the username and password limit when entering the username and password greater than maximum characters,"User is on the ""Registration"" Page",1. Fill in the username and password field with less than maximum characters,"An alert message should show up and the message is ""(based on requirement)"""
+TC-010,Verify that the password is in encrypted form when it is entered,"User is on the ""Login"" Page",1. Verify that the password is encrypted,The password is encrypted
+TC-011,"Verify the ""Forgot password"" button is worked","User is on the ""Login"" Page","1. Click on the ""Forgot password"" button","It will be redirected to the ""Forgot password"" page"
+TC-012,"Verify the email of ""Forgot password"" link is successfully sent","User is on the ""Login"" Page","1. Click on the ""Forgot password"" button
+2. Fill in the email field to send the reset link",The email is successfully sent
+TC-013,Verify that user unable to login by using the old password after user reset to the new password,"User is on the ""Login"" Page","""1. Fill in the username and password field with a valid username and old password
+2. Click on """"Login"""" button""",User will be unable to login and an alert message should show up (the message is based on requirement)
+TC-014,Verify that user able to login by using new password,"User is on the ""Login"" Page","""1. Fill in the username and password field with a valid username and new password
+2. Click on """"Login"""" button""",User will successfully login
+TC-015,"Verify that clicking on the browser ""Close"" button after successful login will not take the user to logout","User is on the ""Home"" Page after successfully logging in","1. Click on ""Close"" button on the browser",User is still logged in
+TC-016,"Verify that clicking on the browser ""Back"" button after successful login will not take the user to logout","User is on the ""Home"" Page after successfully logging in","1. Click on ""Back"" button on the browser",User is still logged in
