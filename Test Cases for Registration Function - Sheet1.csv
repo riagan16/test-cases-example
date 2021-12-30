@@ -1,0 +1,26 @@
+Test Case Code,Test Case,Pre-Condition,Test Step,Expected Result
+,,,,
+TC-001,"Verify that all the fields such as Username, First Name, Last Name, Password and other fields have a valid placeholder","User is on the ""Registration"" Page",1. Check all the place holder from all the fields,There are should be place holder on every field
+TC-002,Verify that all the required/mandatory fields are marked with *,"User is on the ""Registration"" Page",1. Check the * on the mandatory field,There's should be * on the mandatory fields
+TC-003,"Verify that system generates a validation message when clicking on ""Submit"" button without filling all the mandatory fields","User is on the ""Registration"" Page","1. Click on ""Submit"" button without fill all the fields","An alert message should show up and the message is ""This field is required"""
+TC-004,Verify that only filling the mandatory fields and not filling optional fields will still send data to the server,"User is on the ""Registration"" Page","1. Fill in all the mandatory fields
+2. Click on ""Submit"" button",The registration process will be succeeded
+TC-005,"Verify that filling all fields and clicking on ""Submit""  button will send data to the server","User is on the ""Registration"" Page","1. Fill in all the fields including optional fields
+2. Click on ""Submit"" button",The registration process will be succeeded
+TC-006,Verify that system generates a validation message when entering existing email,"User is on the ""Registration"" Page","1. Fill in all the fields on the ""Registration"" Page
+2. Fill in the email field with the existing email
+3. Click on ""Submit"" button","An alert message should show up and the message is ""This email is already exist"""
+TC-007,Verify that the character limit in all the fields (mainly username and password) based on business requirement,"User is on the ""Registration"" Page","1. Fill in all the fields on the ""Registration"" Page
+2. Fill in the password field with less than 6 characters
+3. Click on ""Submit"" button","An alert message should show up and the message is ""(based on requirement)"""
+TC-008,Verify that the validation of email field by entering incorrect email id,"User is on the ""Registration"" Page","1. Fill in all the fields on the ""Registration"" Page
+2. Fill in the email field with the incorrect email id
+3. Click on ""Submit"" button","An alert message should show up and the message is ""This email id is incorrect"""
+TC-009,Verify that the “Terms and Conditions” checkbox is unselected by default (Based on bussiness requirement),"User is on the ""Registration"" Page",1. Verify that the checkbox is unselected,The checkbox is unselected (based on requirement)
+TC-010,Verify that the validation message is displayed when clicking on submit button without selecting “Terms and Conditions” checkbox,"User is on the ""Registration"" Page","1. Fill in all the fields on the ""Registration"" Page
+2. Click on ""Submit"" button without click the “Syarat dan Ketentuan” checkbox","An alert message should show up and the message is ""(based on requirement)"""
+TC-011,Verify that the password is in encrypted form when it is entered,"User is on the ""Registration"" Page",1. Verify that the password is encrypted,The password is encrypted
+TC-012,Verify the password limit when entering the password less than minimum characters,"User is on the ""Registration"" Page",1. Fill in the password field with less than minimum characters,"An alert message should show up and the message is ""(based on requirement)"""
+TC-013,Verify the password limit when entering the password greater than maximum characters,"User is on the ""Registration"" Page",1. Fill in the password field with less than maximum characters,"An alert message should show up and the message is ""(based on requirement)"""
+TC-014,Verify the password's required rule when entering only numbers (I assume the rule has to have mixed characters),"User is on the ""Registration"" Page",1. Fill in the password field with only numbers,"An alert message should show up and the message is ""(based on requirement)"""
+TC-015,Verify if blank spaces are passed in mandatory fields.,"User is on the ""Registration"" Page",1. Fill in the mandatory fields with space,The expected result will be based on requirement

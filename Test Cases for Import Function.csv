@@ -1,0 +1,38 @@
+Test Case Code,Test Case,Pre-Condition,Test Step,Expected Result
+,,,,
+TC-001,Check the label of the Import button.,"User is on ""Import"" page",1. Check on the label of the Import button,The label should be the same as the UI.
+TC-002,Check the default state of the Import button.,"User is on ""Import"" page",1. Check on the default state of the Import button,The expected result depends on the business requirement. For example: The default state of the Import button must be Inactive.
+TC-003,"Check for the Import window when the ""Import"" button being clicked on.","User is on ""Import"" page","1. Click on the ""Import"" button",The design should be the same as the UI.
+TC-004,"Verify by clicking on the ""Close"" button.","User is on ""Import"" page","1. Click on the ""Import"" button
+2. Click on the ""Close"" button","The Import window must be closed when User clicks on the ""Close"" button."
+TC-005,"Verify maximum file size information on the UI.
+(Based on business requirement)","User is on ""Import"" page","1. Click on the ""Import"" button
+2. Check the maximum file size information",The expected result depends on the business requirement. For example: The maximum file size is 5 Mb.
+TC-006,"Verify by importing the file with a valid file extension.
+(Based on business requirement)","User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file",The file should be successfully imported.
+TC-007,Verify the message displayed when User imports the file successfully.,"User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file
+3. Check on the message",The message should be displayed. It is based on the business requirement.
+TC-008,Verify that the import progress bar is working properly.,"User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file
+3. Check on the progress bar",The import progress bar should be working properly.
+TC-009,Verify the import result.,"User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file
+3. Check on the result",The result should be the same as the initial file.
+TC-010,Verify by importing the file with an invalid file extension.,"User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the file with an invalid file extension
+3. Check on the result",The import result should be failed.
+TC-011,"Verify by clicking on the ""Cancel"" button during import process.","User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file
+3. Click on the ""Cancel"" button",The import process should be canceled.
+TC-012,Verify uploaded file cannot exceed a certain file size.,"User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file with an exceeded maximum file size",An alert message should show up. The message is based on the business requirement.
+TC-013,Verify by importing a blank file with a valid file extension.,"User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file with a blank content",An alert message should show up. The message is based on the business requirement.
+TC-014,Verify by importing the file after entering more than maximum length characters in all fields.,"User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file with an exceeded maximum length characters",An alert message should show up. The message is based on the business requirement.
+TC-015,Verify by entering invalid characters in the file and import.,"User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file with invalid characters inside the content",An alert message should show up. The message is based on the business requirement.
+TC-016,Verify by importing the file with a deleted mandatory column.,"User is on ""Import"" page","1. Click on the ""Import"" button
+2. Select on the valid file with deleted mandatory column",An alert message should show up. The message is based on the business requirement.

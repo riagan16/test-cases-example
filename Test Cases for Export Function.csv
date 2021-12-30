@@ -1,0 +1,75 @@
+Test Case Code,Test Case,Pre-Condition,Test Step,Expected Result
+,,,,
+TC-001,Check the label of the Export button,"User is on the ""Export"" page",1. Check on the default state of the Export button,The label should be the same as the UI.
+TC-002,Check the default state of the Export button,"User is on the ""Export"" page",1. Verify that the password is encrypted,The expected result depends on the business requirement. For example: The default state of the Export button must be Inactive.
+TC-003,"Verify by clicking on the ""Close"" button.","User is on the ""Export"" page","1. Click on the ""Export"" button
+2. Click on the ""Close"" button","The Import window must be closed when User clicks on the ""Close"" button."
+TC-004,"Check for the file extension displayed in the ""Save As"" type field.","User is on the ""Export"" page","1. Click on the ""Export"" button
+2. Check on the file extension",The expected result depends on the business requirement. For example: The file extension should be csv.
+TC-005,"Verify by clicking on the ""Browse"" button to select a valid path to export the file.","User is on the ""Export"" page","1. Click on the ""Export"" button
+2. Click on the ""Browse"" button
+3. Select a valid path
+4. Click ""Export""",The file should successfully exported.
+TC-006,Check for the name of the downloaded file.,"User is on the ""Export"" page","1. Click on the ""Export"" button
+2. Click on the ""Browse"" button
+3. Select a valid path
+4. Click on ""Export""
+5. Check on the name of the downloaded file",The file name should be the same as on the website.
+TC-007,"Verify by entering the filename to download the file.
+(In case User is required to input file name before downloading the file).","User is on the ""Export"" page","1. Click on the ""Export"" button
+2. Click on the ""Browse"" button
+3. Select a valid path
+4. Enter the name
+5. Click on ""Export""",The file name should be the same as when User enter the name on the website
+TC-008,Check for the downloaded file format.,The file is already downloaded,1. Check on the file format,The expected result depends on the business requirement. For example: The file format should be csv.
+TC-009,Verify the message displayed when the User downloads the file successfully.,"User is on the ""Export"" page","1. Click on the ""Export"" button
+2. Click on the ""Browse"" button
+3. Select a valid path
+4. Click on ""Export""
+5. Check on the message",The message should be displayed and it is based on the business requirement.
+TC-010,Verify by opening the downloaded file.,The file is already downloaded,1. Open the file,The file should be opened.
+TC-011,Check the content of the file downloaded.,The file is already downloaded,"1. Open the file
+2. Check on the content of the file",The content should be the same as on the website.
+TC-012,"Verify the field length of the characters downloaded in the file.
+(Based on the business requirement)","User is on the ""Export"" page","1. Open the file
+2. Check on the characters' length",The characters's length should be the same as on the website.
+TC-013,Verify by downloading the file when there is are no records/contents on the website to export.,"User is on the ""Export"" page","1. Click on the ""Export"" button
+2. Click on the ""Browse"" button
+3. Select a valid path
+4. Click on ""Export""
+5. Open the file
+6. Check on the content of the file",The content should be empty.
+TC-014,Verify by re-exporting the same file again.,"User is on the ""Export"" page","1. Click on the ""Export"" button
+2. Click on the ""Browse"" button
+3. Select a valid path
+4. Click on ""Export""
+5. Open the file
+6. Check on the content of the file",The content should be the same as the previous file.
+TC-015,Verify by exporting the file for past date.,"User is on the ""Export"" page","1. Select on the past date
+2. Click on the ""Export"" button
+3. Click on the ""Browse"" button
+4. Select a valid path
+5. Click on ""Export""
+6. Open the file
+7. Check on the content of the file",The content should be the same as on the website for past date.
+TC-016,Verify by exporting the file for the current date.,"User is on the ""Export"" page","1. Select on the current date
+2. Click on the ""Export"" button
+3. Click on the ""Browse"" button
+4. Select a valid path
+5. Click on ""Export""
+6. Open the file
+7. Check on the content of the file",The content should be the same as on the website for current date.
+TC-017,Verify by exporting the file for future date.,"User is on the ""Export"" page","1. Select on the future date
+2. Click on the ""Export"" button
+3. Click on the ""Browse"" button
+4. Select a valid path
+5. Click on ""Export""
+6. Open the file
+7. Check on the content of the file",The content should be the same as on the website for future date.
+TC-018,Verify by exporting the file for a certain range of the date.,"User is on the ""Export"" page","1. Select the start date and the end date
+2. Click on the ""Export"" button
+3. Click on the ""Browse"" button
+4. Select a valid path
+5. Click on ""Export""
+6. Open the file
+7. Check on the content of the file",The content should be the same as on the website for a certain range of the date.
